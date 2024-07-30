@@ -1,7 +1,7 @@
 .container {
  display: flex;
  flex-wrap: nowrap;
- overflow-x: scroll;
+ overflow-x: hidden;
  overflow-y: hidden;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .typewriter-container {
-  font-size: 5em;
+  font-size: 3em;
   font-family: 'Helvetica', sans-serif;
   width: 100vw;
   color: white;
@@ -36,6 +36,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 
 }
 
@@ -190,6 +191,9 @@
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
     transform: translateY(0);

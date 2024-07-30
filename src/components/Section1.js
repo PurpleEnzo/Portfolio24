@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react';
     }, []);
   
   return (
-    <div className="section section-1">
+    <div id='homepage' className="section section-1">
       <div className="typewriter-container">
         <ReactTyped
           strings={[
@@ -22,7 +22,11 @@ import { useEffect, useState } from 'react';
           ]}
           typeSpeed={30}
         /></div>
-          {showButton && <button className='CTAButton'>get in touch</button>}
+        <div style={{height: 50}}>
+
+        {showButton && <button className='CTAButton'>get in touch</button>}
+      
+        </div>
       
     </div>
   );

@@ -9,13 +9,26 @@ import './App.css';
 const App = () => {
  
 const [showNavbar, setShowNavbar] = useState(false);
+const [allowScroll, setAllowScroll] = useState(false);
 
 useEffect(() => {
   const timer = setTimeout(() => {
     setShowNavbar(true)
-  }, 5500);
+    const container = document.getElementById('container');
+    if (container) {
+      container.style.overflowX = 'scroll';
+    }
+  }, 3500);
   return () => clearTimeout(timer)
 }, [])
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setAllowScroll(true)
+  }, 3500);
+  return () => clearTimeout(timer)
+  }, [])
+
 
 
 
@@ -33,7 +46,7 @@ const handleScroll = (event) => {
 
 
   return (
-    <div className="container" onWheel={handleScroll}>
+    {allowScroll} && <div id="container" className="container" onWheel={handleScroll}>
       <div className="horizontal-sections">
       {showNavbar && <Navbar />}
       <Section1 />
