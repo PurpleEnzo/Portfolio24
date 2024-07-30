@@ -3,13 +3,29 @@ import linkedinLogo from "../images/linkedin.svg";
 import emailIcon from "../images/email.svg";
 import CV from '../files/CV.pdf';
 
+const scrollToSection = (page) => {
+     const section = document.getElementById(`${page}`);
+     console.log(section)
+    if(section){
+        section.scrollIntoView({behavior: 'smooth'});
+    }}
+
 
 const Navbar = () => (
+    
+    
+
+
+
+
     <div className="navbar" id="Navbar">
         <div className="topSect" id="topSect">
-            <button className="navButton" onClick="">home</button>
-            <button className="navButton" onClick="">about me</button>
-            <button className="navButton" onClick="">my work</button>
+            <button className="navButton" 
+            onClick={() => {scrollToSection('homepage')}}>home</button>
+            <button className="navButton"  
+            onClick={() => {scrollToSection('aboutme')}}>about me</button>
+            <button className="navButton" 
+            onClick={() => {scrollToSection('mywork')}}>my work</button>
             <button className="navButton" onClick="">personal projects</button>
             <button className="navButton" onClick="">contact</button>
         </div>
