@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import Section1 from './components/Section1';
 import Section2 from './components/Section2';
 import Section3 from './components/Section3';
+import Section4 from './components/Section4';
+import Section5 from './components/Section5';
+import Divider from './components/divider';
 import Navbar from './components/navbar';
 import './App.css';
 
@@ -50,8 +53,14 @@ const handleScroll = (event) => {
       <div className="horizontal-sections">
       {showNavbar && <Navbar />}
       <Section1 />
+      <Divider />
       <Section2 />
+      <Divider />
       <Section3 />
+      <Divider />
+      <Section4 />
+      <Divider />
+      <Section5 />
       </div>
     </div>
   );

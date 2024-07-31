@@ -23,11 +23,13 @@ const Navbar = () => (
             <button className="navButton" 
             onClick={() => {scrollToSection('homepage')}}>home</button>
             <button className="navButton"  
-            onClick={() => {scrollToSection('aboutme')}}>about me</button>
+            onClick={() => {scrollToSection('aboutme')}}>about<br /> me</button>
             <button className="navButton" 
-            onClick={() => {scrollToSection('mywork')}}>my work</button>
-            <button className="navButton" onClick="">personal projects</button>
-            <button className="navButton" onClick="">contact</button>
+            onClick={() => {scrollToSection('mywork')}}>my <br /> work</button>
+            <button className="navButton" 
+            onClick={() => {scrollToSection('personalprojects')}}>personal projects</button>
+            <button className="navButton" 
+            onClick={() => {scrollToSection('contact')}}>contact</button>
         </div>
         <div className="bottomSect" id="bottomSect">
             <a href={CV} target="blank">CV / résumé</a>
