@@ -234,8 +234,8 @@
 .inner{
   display: flex;
   flex-direction: column;
-  margin-left: 9vw;
-  width: 100vw;
+  margin-left: 100px;
+  width: 91vw;
   height: 100vh;
   justify-content: space-evenly;
 }
@@ -290,40 +290,65 @@
   width: 91vw;
 }
 
-.cardXL{
-  width: 20vw;
-  height: 55vh;
+.card{
   border-radius: 55px;
   background-color: #111012;
   color: white;
   font-family: Helvetica;
+  overflow: hidden;
 }
 
-.cardL {
+.card.XL{
+  width: 20vw;
+  height: 55vh;
+}
+
+.card.L {
   height: 25vh;
   width: 33vw;
   display: flex;
-  flex-direction: column;
-  background-color: #111012;
-  border-radius: 55px;
-  font-family: Helvetica;
 
 }
 
-.cardS{
+.card.S{
   height: 30vh;
   width: 20vw;
-  background-color: #111012;
-  border-radius: 55px;
-  font-family: Helvetica;
-  flex-direction: column;
 }
 
-.cardLong{
+.card.Long{
   width: 68.5vw;
   height: 30vh;
-  background-color: #111012;
-  border-radius: 55px;
+}
+
+.interior{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height: inherit;
+}
+
+.interior h1 {
+  font-size: 32px;
+  margin: 0.5em;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1920px) {
+  .interior h1 {
+    font-size: 23px;
+    margin: 0.5em;
+    padding-top: 20px;
+
+  }
+  
+}
+
+.interior img{
+  width: 20vw;
+  height: 40vh;
 }
 
 .grid {
