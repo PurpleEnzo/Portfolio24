@@ -27,8 +27,6 @@ const Navbar = () => (
             <button className="navButton" 
             onClick={() => {scrollToSection('mywork')}}>my <br /> work</button>
             <button className="navButton" 
-            onClick={() => {scrollToSection('personalprojects')}}>personal projects</button>
-            <button className="navButton" 
             onClick={() => {scrollToSection('contact')}}>contact</button>
         </div>
         <div className="bottomSect" id="bottomSect">

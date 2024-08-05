@@ -1,7 +1,7 @@
 {
   "name": "ejportfolio24",
   "version": "0.1.0",
-  "homepage": "http://eodjdesign.com",
+  "homepage": "https://eodjdesign.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

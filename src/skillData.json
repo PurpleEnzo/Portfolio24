@@ -1,0 +1,81 @@
+
+
+[
+    {
+        "id" : "html",
+        "title" : "HTML",
+        "imgSrc" : "../images/html5.png",
+        "proficiency" : 5
+
+    },
+    {
+        "id" : "css",
+        "title" : "CSS",
+        "imgSrc" : "../images/css3.png",
+        "proficiency" : 4
+
+    },
+    {
+        "id" : "js",
+        "title" : "JavaScript",
+        "imgSrc" : "../images/javascript.png",
+        "proficiency" : 3
+
+    },
+    {
+        "id" : "ts",
+        "title" : "TypeScript",
+        "imgSrc" : "../images/typescript.png",
+        "proficiency" : 2
+
+    },
+    {
+        "id" : "react",
+        "title" : "React",
+        "imgSrc" : "../images/react.png",
+        "proficiency" : 3
+
+    },
+    {
+        "id" : "git",
+        "title" : "Git",
+        "imgSrc" : "../images/git.png",
+        "proficiency" : 3
+
+    },
+    {
+        "id" : "telerik",
+        "title" : "Telerik",
+        "imgSrc" : "../images/telerik.svg",
+        "proficiency" : 2
+
+    },
+    {
+        "id" : "webflow",
+        "title" : "Webflow",
+        "imgSrc" : "../images/webflow.png",
+        "proficiency" : 4
+
+    },
+    {
+        "id" : "wordpress",
+        "title" : "Wordpress",
+        "imgSrc" : "../images/wordpress.png",
+        "proficiency" : 5
+
+    },
+    {
+        "id" : "figma",
+        "title" : "Figma",
+        "imgSrc" : "../images/figma.svg",
+        "proficiency" : 4
+
+    },
+    {
+        "id" : "adobe",
+        "title" : "Adobe Suite",
+        "imgSrc" : "../images/adobe.png",
+        "proficiency" : 4
+
+    }
+]

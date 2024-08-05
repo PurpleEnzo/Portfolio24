@@ -91,6 +91,9 @@
 
 .section-3 {
   background-color: #18191A;
+  display: flex;
+  flex-direction: column;
+
 
 }
 
@@ -255,7 +258,7 @@
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  font-family: Helvetica;
+  font-family: 'Helvetica';
 
 }
 
@@ -320,20 +323,33 @@
   height: 30vh;
 }
 
+.card.work{
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+
 .interior{
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   overflow: hidden;
   height: inherit;
 }
 
-.interior h1 {
+.interior h1  {
   font-size: 32px;
   margin: 0.5em;
   padding-top: 20px;
   padding-right: 20px;
+}
+
+.interior p {
+  font-size: 32px;
+  margin: 0.5em;
+  padding-right: 20px;
+  font-family: 'HelveticaLight';
 }
 
 @media screen and (max-width: 1920px) {
@@ -343,7 +359,16 @@
     padding-top: 20px;
 
   }
-  
+
+  .interior p {
+    font-size: 23px;
+    margin: 0.5em;
+  }
+  .card.work{
+    height: auto;
+    width: auto;
+    padding: 20px;
+  }
 }
 
 .interior img{
@@ -351,10 +376,211 @@
   height: 40vh;
 }
 
+
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2.5vw;
-  row-gap: 2.5vh;
+  row-gap: 5vh;
   align-content: space-between;
 }
+
+.grid.L{
+  column-gap: 1vw;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  row-gap: 1vh;
+  background-color: transparent;
+  margin: 0.5em;
+}
+
+.skillset {
+  width: 7vw;
+  height: 3vh;
+  border: 2px solid white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+.title-area {
+  font-size: 32px;
+  margin: 0.5em;
+}
+
+.description {
+  margin: 0.5em;
+  font-family: 'HelveticaLight';
+}
+
+@media screen and (max-width: 1920px) {
+  .skillset {
+    width: 8.5vw;
+    height: 3vh;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    font-size: 20px;
+  }
+
+  .title-area{
+    font-size: 22px;
+  }
+  
+  .description{
+      font-size: 22px;
+      height: 70px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+
+  .link{
+    width: 2.5vw;
+    height: 5vh
+  }
+
+  .expand{
+    width: 3vw;
+    height: 6vh;
+  }
+  
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.title-area h1 {
+  margin: 0;
+}
+
+.title-area h3 {
+  margin: 0;
+  font-family: 'HelveticaLight';
+  font-weight: 300;
+}
+
+.description {
+  margin: 0.5em;
+}
+
+
+.buttonCont {
+  display: flex;
+  gap: 10px; /* Space between the buttons */
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+.link{
+  display: inline-block;
+  width: 2vw;
+  height: 4vh;
+  border-radius: 50%;
+  border: 4px solid transparent; /* Make space for the gradient border */
+  background-image: linear-gradient(#111012, #111012), /* bottom layer: white background */
+                    linear-gradient(to bottom, #7303c0, #ec38bc, #fdeff9); /* top layer: gradient border */
+  background-origin: border-box; /* Ensure gradient border is visible */
+  background-clip: content-box, border-box; /* Clip the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  
+}
+
+
+
+.expand{
+  display: inline-block;
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 50%;
+  border: 4px solid transparent; /* Make space for the gradient border */
+  background-image: linear-gradient(#111012, #111012), /* bottom layer: white background */
+                    linear-gradient(to bottom, #7303c0, #ec38bc, #fdeff9); /* top layer: gradient border */
+  background-origin: border-box; /* Ensure gradient border is visible */
+  background-clip: content-box, border-box; /* Clip the background */
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+ .icon{
+  width: 3vw;
+  height: 3vh;
+}
+
+.link:hover, .expand:hover {
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 50%;
+  background-image: linear-gradient(#18191A, #18191A),
+                    linear-gradient(to bottom, #7303c0, #ec38bc, #fdeff9); 
+  transition: all 0.3s ease-in-out;
+  background-origin: border-box; /* Ensure gradient border is visible */
+  background-clip: content-box, border-box; /* Clip the background */
+}
+
+.expand:hover{
+  width: 3vw;
+  height: 6vh;
+}
+
+
+
+.borderGradient .icon {
+  width: 32px; /* Icon width */
+  height: 32px; /* Icon height */
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.indicator.active {
+  background-color: white;
+  border-color: white;
+}
+
+#skills-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.skill h3 {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'HelveticaLight';
+}
+
+.skill {
+  text-align: center;
+  width: 5vw;
+}
+
+.skill img{
+  width: 100px;
+  height: 100px;
+}
+

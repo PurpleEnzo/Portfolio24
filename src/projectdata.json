@@ -1,0 +1,65 @@
+[
+    {
+    "id": "adminitrac",
+    "title" : "Admintrac",
+    "jobRole" : "Lead Full Stack Designer @ Tracware Ltd",
+    "shortline" : "A project management software that required a complete redesign, upgrade & a new website.",
+    "description" : "",
+    "link" : "https://www.adminitrac.com",
+    "expand" : "",
+    "skillsUsed": [
+        "HTML/CSS",
+        "JavaScript",
+        "VB.NET",
+        "UI/UX Design",
+        "Product Design",
+        "Webflow"
+    ]
+    },
+    {
+        "id": "awi",
+        "title" : "Aerotrac Web Interface",
+        "jobRole" : "Front End Developer @ Tracware Ltd",
+        "shortline" : "A progressive web application for the core Tracware product, Aerotrac.",
+        "description" : "",
+        "link" : "https://www.tracware.com/aerotrac-new",
+        "expand" : "",
+        "skillsUsed": [
+            "HTML/CSS",
+            "JavaScript",
+            "C#",
+            "UI/UX Design",
+            "Telerik Kendo"
+        ]
+    },
+    {
+        "id": "ployon",
+        "title" : "Ployon Website",
+        "jobRole" : "Web Developer @ Tracware Ltd",
+        "shortline" : "Website for Ployon, a subsidiary of Tracware. Ployon was a MRO for watercraft.",
+        "description" : "",
+        "link" : "https://www.ployon.com",
+        "expand" : "",
+        "skillsUsed": [
+            "HTML/CSS",
+            "JavaScript",
+            "UI/UX Design",
+            "WordPress"
+        ]
+    },
+    {
+        "id": "aerotrac",
+        "title" : "Aerotrac",
+        "jobRole" : "Full Stack Designer @ Tracware Ltd",
+        "shortline" : "I designed the concepts for Aerotrac 3.0 and built the landing page for the website.",
+        "description" : "",
+        "link" : "https://www.tracware.com/aerotrac-new",
+        "expand" : "",
+        "skillsUsed": [
+            "HTML/CSS",
+            "JavaScript",
+            "UI/UX Design",
+            "WordPress"
+        ]
+    }
+]
