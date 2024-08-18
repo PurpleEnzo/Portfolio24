@@ -1,3 +1,5 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 .container {
  display: flex;
  flex-wrap: nowrap;
@@ -539,6 +541,7 @@
 .expand:hover{
   width: 3vw;
   height: 6vh;
+  cursor: pointer;
 }
 
 
@@ -584,3 +587,147 @@
   height: 100px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  z-index: 10; /* Ensure it is above other content */
+  cursor: pointer; /* Makes the overlay clickable */
+}
+
+/* Expandable div */
+.expandableDiv {
+  position: fixed;
+  bottom: 5%;
+  left: 12%;
+  width: 80%;
+   /* Limit the height of the expandable div */
+  background: #18191A;
+  overflow-y: auto;
+  animation: slideUp 0.5s ease-out forwards; 
+  padding: 20px;
+  height: 85vh;
+  z-index: 20; /* Ensure it's above the overlay */
+  border-radius: 50px;
+}
+
+/* Animation for sliding up the expandable div */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Description that appears on upward scroll */
+.description-scroll {
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.description-scroll.show {
+  opacity: 1;
+}
+
+.imageSlider {
+  width: 91%;
+  max-width: auto;
+  margin: 0 auto; /* Center the slider */
+}
+
+/* Individual slide */
+.imageSlider div {
+  position: relative;
+  text-align: center;
+}
+
+/* Image styling */
+.imageSlider img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: fill; /* Cover the container while maintaining aspect ratio */
+  border-radius: 50px;
+}
+
+/* Slick dots */
+.slick-dots {
+  bottom: -30px;
+
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #999;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+}
+
+/* Slick arrows */
+.slick-prev, .slick-next {
+  font-size: 20px;
+  z-index: 1;
+  color: transparent;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: transparent;
+  
+}
+
+.iconImage {
+  width:25%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(115,3,192,1) 0%, rgba(236,56,188,1) 50%, rgba(253,239,249,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconImage img {
+  width: 96%;
+  height: 96%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  
+
+}
+
+.ContactInfo {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.center {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ContactInfo h1 {
+margin: 0;
+font-family: Helvetica;
+}
+
+.ContactInfo h3 {
+
+  font-family: 'HelveticaLight';
+}
