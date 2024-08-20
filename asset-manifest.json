@@ -1,31 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f6abe61.css",
-    "main.js": "/static/js/main.78aab979.js",
+    "main.css": "/static/css/main.e8a7eb38.css",
+    "main.js": "/static/js/main.dfdd2c0c.js",
     "static/js/453.74ea3e06.chunk.js": "/static/js/453.74ea3e06.chunk.js",
     "static/media/eodj.svg": "/static/media/eodj.56fb80f6ef642fcc795f6effe42a87ec.svg",
+    "static/media/eodj_handsome.svg": "/static/media/eodj_handsome.37fe7267d74941f6d8aacab1dcb54006.svg",
+    "static/media/CV.pdf": "/static/media/CV.89fbb8423974976c79b5.pdf",
     "static/media/adobe.png": "/static/media/adobe.855ad08a0406de540af7.png",
     "static/media/HelveticaNeueLight.otf": "/static/media/HelveticaNeueLight.a7c3c98319c1341d5aa5.otf",
     "static/media/HelveticaNeueMedium.otf": "/static/media/HelveticaNeueMedium.38884ffafe8888205009.otf",
     "static/media/wordpress.png": "/static/media/wordpress.da5959bdd8b731d460e7.png",
     "static/media/typescript.png": "/static/media/typescript.16b157ea18cd87601675.png",
-    "static/media/CV.pdf": "/static/media/CV.32663d50b8772bac4f00.pdf",
     "static/media/linkedin.svg": "/static/media/linkedin.aeb420e9a3c95c24225cedaf63919b28.svg",
     "static/media/css3.png": "/static/media/css3.4cc5aefdac36bc238006.png",
     "static/media/email.svg": "/static/media/email.56bbed531c67177f6f8b3d1ed3bbcf19.svg",
     "static/media/html5.png": "/static/media/html5.433fda35ec3b24cb2a74.png",
     "static/media/javascript.png": "/static/media/javascript.266bd9fb2663dcc057b4.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/figma.svg": "/static/media/figma.5580ee5d6e639bcc3c07b264f6c28dc1.svg",
     "index.html": "/index.html",
     "static/media/External.svg": "/static/media/External.c6c9e9710c61f9f142f0c57d5b29ae3d.svg",
     "static/media/Arrow_right.svg": "/static/media/Arrow_right.843666fbabba0394bce5f24953ef6a09.svg",
     "static/media/telerik.svg": "/static/media/telerik.6e0e8e6ffdddd21ee07e6f47d416fbff.svg",
-    "main.3f6abe61.css.map": "/static/css/main.3f6abe61.css.map",
-    "main.78aab979.js.map": "/static/js/main.78aab979.js.map",
+    "main.e8a7eb38.css.map": "/static/css/main.e8a7eb38.css.map",
+    "main.dfdd2c0c.js.map": "/static/js/main.dfdd2c0c.js.map",
     "453.74ea3e06.chunk.js.map": "/static/js/453.74ea3e06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f6abe61.css",
-    "static/js/main.78aab979.js"
+    "static/css/main.e8a7eb38.css",
+    "static/js/main.dfdd2c0c.js"
   ]
 }
